@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ePortfolio | Personal Template</title>
+    <meta
+      name="description"
+      content="Template ePortfolio moderno, minimal e personalizzabile in stile dark glassmorphism professionale."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="loader" class="loader" aria-hidden="true">
+      <div class="loader-ring"></div>
+      <p>Loading portfolio...</p>
+    </div>
+
+    <div id="cursor-glow" class="cursor-glow"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-gradient" aria-hidden="true"></div>
+
+    <main class="layout">
+      <aside class="sidebar glass-panel">
+        <div class="brand">EP</div>
+        <nav>
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#resume" class="nav-link">Resume</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#gallery" class="nav-link">Gallery</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+      </aside>
+
+      <section id="home" class="profile-card glass-panel reveal">
+        <img id="profile-image" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=900&q=80" alt="Foto profilo" />
+        <h1 id="profile-name">Your Name</h1>
+        <h2 id="profile-subtitle">Subtitle / Role / Focus</h2>
+        <p id="profile-bio">
+          Breve descrizione personale personalizzabile. Inserisci qui il tuo percorso, i tuoi obiettivi e il tuo stile.
+        </p>
+        <div id="social-links" class="social-links"></div>
+        <div class="cta-row">
+          <a id="cv-download" href="assets/cv-placeholder.pdf" download class="btn btn-primary">Download CV</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </section>
+
+      <section class="content">
+        <article id="about" class="content-panel glass-panel reveal">
+          <h3>About Me</h3>
+          <p data-field="aboutText"></p>
+        </article>
+
+        <article id="resume" class="content-panel glass-panel reveal">
+          <h3>Resume / Experience</h3>
+          <ul id="resume-list" class="timeline"></ul>
+        </article>
+
+        <article id="projects" class="content-panel glass-panel reveal">
+          <h3>Projects</h3>
+          <div id="projects-grid" class="card-grid"></div>
+        </article>
+
+        <article id="gallery" class="content-panel glass-panel reveal">
+          <h3>Gallery / Interests</h3>
+          <div id="gallery-grid" class="card-grid"></div>
+        </article>
+
+        <article id="contact" class="content-panel glass-panel reveal">
+          <h3>Contact</h3>
+          <p data-field="contactText"></p>
+          <div id="contact-links" class="contact-links"></div>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
